@@ -2,6 +2,7 @@
 require_relative '../lib/game_logic.rb'
 
 array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+new_array = []
 def game_board(array)
   array.length.times do |i|
     print '|'
@@ -39,11 +40,11 @@ while game_chk == false
   p_move = gets.chomp.to_i
   move = logic.check_move(p_move, array)
   while move == false
-    p_move = gets.chomp.to_i
     move = logic.check_move(p_move, array)
     if move == false
       game_board(array)
       puts 'Invalid Move! Enter your move from the board'
+      p_move = gets.chomp.to_i
     end
   end
   logic.replace_pos(array, p_move, player_symbol)
