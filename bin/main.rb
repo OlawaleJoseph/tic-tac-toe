@@ -39,9 +39,9 @@ while game_chk == false
     player_symbol = 'O'
   end
   p_move = gets.chomp.to_i
-  move = logic.check_move(p_move, array)
+  move = logic.check_move(p_move)
   while move == false
-    move = logic.check_move(p_move, array)
+    move = logic.check_move(p_move)
     next unless move == false
 
     game_board(array)
