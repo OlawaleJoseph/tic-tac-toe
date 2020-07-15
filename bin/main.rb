@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
-require_relative '../lib/game_logic.rb'
-
+require_relative '../lib/game_board.rb'
+require_relative '../lib/check_win.rb'
 array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 def game_board(array)
   array.length.times do |i|
@@ -12,9 +12,9 @@ def game_board(array)
   end
 end
 
-logic = Gamelogic.new
+g_board = Gameboard.new
 game_board(array)
-
+check_winner = Checkwin.new
 puts 'Welcome to game Tic Tac Toe'
 puts 'Player 1 Enter your Name'
 player1 = gets.chomp
@@ -39,18 +39,18 @@ while game_chk == false
     player_symbol = 'O'
   end
   p_move = gets.chomp.to_i
-  move = logic.check_move(p_move)
+  move = g_board.check_move(p_move)
   while move == false
-    move = logic.check_move(p_move)
+    move = g_board.check_move(p_move)
     next unless move == false
 
     game_board(array)
     puts 'Invalid Move! Enter your move from the board'
     p_move = gets.chomp.to_i
   end
-  logic.replace_pos(array, p_move, player_symbol)
+  g_board.replace_pos(array, p_move, player_symbol)
   game_board(array)
-  game_chk = logic.wining_move(array)
+  game_chk = check_winner.wining_move(array)
   if game_chk == true
     if player_chk == false
       puts "#{player2} you win"
