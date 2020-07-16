@@ -41,13 +41,13 @@ Contributions, issues and feature requests are welcome! Start by:
 
 # Contributors
 
- **Umair Ahmad**
+**Umair Ahmad**
 - Github: [@umairahmad125](https://github.com/UmairAhmad125)
 - Linkedin: [linkedin](https://www.linkedin.com/in/umair-ahmad-b5a89015a/)
 - Twitter: [@umairahmadDP](https://twitter.com/umairahmadDP)
 - Email: [umairahmad125@gmail.com]
 
-  **Martin Nyagah**
+**Martin Nyagah**
 - Github: [@menyagah](https://github.com/menyagah)
 - Twitter: [@Martinnyaga20](https://twitter.com/Martinnyaga20)
 - Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
