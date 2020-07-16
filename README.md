@@ -2,18 +2,17 @@
 This is a tic tac toe command line interface game and below are the rules to playing it:
 
  - The game is played on a grid that's 3 squares by 3 squares.
- - You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.
- - The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.
+ - You are X, your friend is O. Players take turns in availiable slots (1-9 initially).
+ - The first player to get 3 of his/her marks in a row (up, down, across, or diagonally) is the winner.
  - When all 9 squares are full, the game is over.
 
 # Built With
  - Ruby
 
 # Getting Started
- - Clone or download the files from our repository by typing the following command on your terminal
-
  - Install ruby if you don't have it https://www.ruby-lang.org/en/downloads/
 
+ - Clone or download the files from our repository by typing the following command on your terminal
  ```bash
   git clone https://github.com/UmairAhmad125/tic-tac-toe.git
  ```
