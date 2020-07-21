@@ -82,27 +82,4 @@ describe 'check_win' do
       expect(chkwin.wining_move(not_win)).to be(false)
     end
   end
-
-  # describe 'check move' do
-  #   it 'should return true for a valid position' do
-  #     expect(board.check_move(2)).to be(true)
-  #   end
-
-  #   it 'should return false if no argument was passed' do
-  #     expect(board.check_move).to be(false)
-  #   end
-
-  #   it 'should return false if the position is taken' do
-  #     board.replace_pos(array, 2, 'O')
-  #     expect(board.check_move(2)).to be(false)
-  #   end
-
-  #   it 'should return false if the position is out the range 1-9' do
-  #     expect(board.check_move(20)).to be(false)
-  #   end
-
-  #   it 'should return false if the position is out the range 1-9' do
-  #     expect(board.check_move('w')).to be(false)
-  #   end
-  # end
 end
