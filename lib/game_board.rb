@@ -19,7 +19,7 @@ class Gameboard
     @pos_taken.length.times do |i|
       return false if @pos_taken[i] == move
     end
-    if move < 1 || move > 9 || !(move.is_a? Integer)
+    if move.to_i < 1 || move.to_i > 9 || !(move.is_a? Integer)
       false
     else
       true
